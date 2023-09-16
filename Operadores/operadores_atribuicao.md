@@ -2,7 +2,7 @@
 
 ## O que são?
 
-São operadores utilizados para definir o valor inicial ou sobrescrever o valor de uma variável.
+Os operadores de atribuição são utilizados para definir o valor inicial de uma variável ou sobrescrever o valor existente.
 
 ### Atribuição simples 
 ~~~Python
@@ -11,7 +11,7 @@ print(saldo)
 ~~~
 > 500  
 
-Perceba que quando tiver somente um sinal de igual(=), se lê como "recebe" ou "atribui", então a leitura da primeira linha do codigo seria "saldo recebe 500". 
+Perceba que quando usamos apenas um sinal de igual (=), podemos ler como "recebe" ou "atribui". Portanto, a linha de código acima pode ser lida como "saldo recebe 500".
 
 ### Atribuição com adição
 
@@ -22,7 +22,7 @@ print(saldo)
 ~~~
 > 700  
 
-Aqui percebemos que o saldo recebeu 500, mas após isso o saldo recebeu mais 200, totalizando 700, que foi o print do programa.
+Neste caso, o saldo inicialmente recebeu 500, mas em seguida recebeu mais 200, resultando em um total de 700, como indicado na saída do programa.
 
 ### Atribuição com subtração
 
@@ -33,7 +33,7 @@ print(saldo)
 ~~~
 > 400  
 
-Aqui percebemos que o saldo recebeu 500, mas após isso o saldo recebeu menos 100, totalizando 400 que foi a saida do programa.
+Aqui, o saldo inicialmente recebeu 500, mas depois foi subtraído 100, resultando em um saldo de 400, como mostrado na saída do programa.
 
 ### Atribuição com multiplicação
 
@@ -44,7 +44,7 @@ print(saldo)
 ~~~
 > 1000
 
-Novamente o saldo recebe 500, só que agora ele recebe uma multiplicação por 2, o que ocasiona em um saldo de 1000.
+Novamente, o saldo inicialmente é 500, mas desta vez é multiplicado por 2, resultando em um saldo de 1000.
 
 ### Atribuição com divisão
 
@@ -62,7 +62,7 @@ print(saldo)
 ~~~
 > 100
 
-Aqui seguimos o mesmo padrão dos demais, saldo inicial 500, recebe uma atribuição de divisão, uma inteira e uma com decimais, resultando na divisão do saldo pelo numero que foi colocado nessa atribuição.
+Nesses casos, o saldo inicial é 500 e, em seguida, há uma atribuição de divisão, uma normal (com decimais) e uma com divisão inteira, resultando na divisão do saldo pelo número especificado.
 
 ### Atribuição com módulo/resto
 
@@ -73,7 +73,7 @@ print(saldo)
 ~~~
 > 20
 
-seguindo o mesmo padrão dos demais, só que ultilizando o resto.
+Da mesma forma que os exemplos anteriores, mas usando o operador de módulo, que retorna o resto da divisão.
 
 ### Atribuição com exponenciação
 
@@ -84,4 +84,4 @@ print(saldo)
 ~~~
 > 6400
 
-seguindo o mesmo padrão dos demais, só que ultilizando o expoente.
+Mais uma vez, seguindo o mesmo padrão dos outros operadores, mas usando a exponenciação para elevar o saldo ao quadrado.

@@ -2,8 +2,9 @@
 
 ## O que são?
 
-São operadores utilizados em conjunto com os operadores de comparação, para montar uma expressão lógica. Quando um operadores de comparação é utilizado, o resultado retronado é um booleano, dessa forma podemos combinar operadores de comparação com os operadores lógicos, Exemplo:  
-op_comparacao+op_logico+op_comparacao...N...
+Os operadores lógicos são utilizados em conjunto com os operadores de comparação para criar expressões lógicas que avaliam condições em programas Python. Quando um operador de comparação é usado, o resultado retornado é um valor booleano (True ou False). Portanto, podemos combinar operadores de comparação usando operadores lógicos para criar condições mais complexas. Por exemplo:
+
+op_comparacao + op_logico + op_comparacao...N...
 
 ### Exemplo
 ~~~Python
@@ -18,7 +19,7 @@ saque <= limite
 >>> False
 ~~~
 
-### Operador and (e)
+### Operador `and` (E)
 
 ~~~Python
 saldo = 1000
@@ -30,20 +31,24 @@ saldo >= saque  and saque <= limite
 > False
 
 Explicação simplificada.  
-Eu estou contratando e quero uma pessoa que fale inglês e português, três pessoas vieram fazer a entrevista.
+Imagine que você está contratando uma pessoa para um trabalho que requer fluência em inglês e português. Três candidatos comparecem para a entrevista.
 
 
-Fala | Inglês | Português
- |---|---|---|
-Paula  | Fala|  Não fala
-Joana   |  Não fala | fala
-Jõao  | Fala | fala
+| Nome  | Fala Inglês | Fala Português |
+|-------|-------------|-----------------|
+| Paula | Sim         | Não             |
+| Joana | Não         | Sim             |
+| João  | Sim         | Sim             |
 
-Nesse caso, eu quero uma pessoa que fale inglês "and" português, quem dessas pessoas levaria um "true" ou ganharia o novo emprego?  
-*O João, por que ele fala inglês and português.*  
-No python, ultilizamso o and para representar o operador and, mas em C, por exemplo, ultilizamos o &&.
 
-### Operador or (ou)
+Neste caso, você deseja uma pessoa que fale inglês "and" português. Quem dos candidatos seria escolhido ou receberia o emprego?   
+
+**Resposta:**  
+*João, porque ele fala inglês and português.*   
+
+Em Python, usamos o operador and para representar a operação lógica "E". Em outras linguagens, como C, é comum usar && para a mesma operação.
+
+### Operador `or` (OU)
 
 
 ~~~Python
@@ -57,7 +62,32 @@ saldo >= saque  or saque <= limite
 
 Explicação simplificada.  
 
-Seguindo o mesmo exemplo anterior, só que agora eu preciso de alguém que fale ou inglês ou português. 
-Quais seriam os possiveis novos empregados da empresa?  
-*Todos seriam possiveis empregados*  
-A unica forma de exclusão nessa opção é se não houver nenhuma das linguas que estou querendo, ou condições. 
+Continuando com o exemplo anterior, agora você precisa contratar alguém que fale inglês "ou" português. Quais dos candidatos seriam possíveis novos funcionários da empresa?   
+
+**Resposta:**   
+*Todos eles seriam possíveis novos funcionários.*    
+
+A única forma de exclusão nessa opção é se nenhum dos candidatos falar nenhuma das línguas desejadas ou atender às condições especificadas.  
+Em Python, usamos o operador or para representar a operação lógica "OU". Este operador retorna True se pelo menos uma das condições for verdadeira.
+
+
+### Operador `not` (NÃO)
+
+O operador not é um operador lógico que nega o valor de uma expressão booleana. Ele inverte o valor booleano, tornando True em False e vice-versa.  
+Exemplo: 
+
+~~~Python
+ativo = True
+inativo = not ativo
+print(inativo)
+
+~~~
+> False
+
+**Explicação:**   
+
+Neste exemplo, temos uma variável ativo que é definida como True, o que significa que algo está ativo. Em seguida, usamos o operador not para negar o valor de ativo, resultando em False. Portanto, a variável inativo se torna False.
+
+O operador not é útil quando queremos verificar se algo não é verdadeiro. Ele pode ser usado para inverter condições e tomar decisões com base na negação de valores booleanos.
+
+Em resumo, o operador not é uma ferramenta poderosa para lidar com valores booleanos, permitindo que você avalie negações de condições e crie lógica de decisão baseada na negação de estados booleanos.
